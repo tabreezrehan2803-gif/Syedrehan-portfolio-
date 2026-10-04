@@ -1,0 +1,185 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #050505;
+  --surface: #0F0F0F;
+  --surface-2: #161616;
+  --text: #F3F4F6;
+  --text-muted: #A1A1AA;
+  --text-dim: #52525B;
+  --accent: #FF3B30;
+  --accent-green: #32D74B;
+  --accent-amber: #FFD60A;
+  --line: rgba(255, 255, 255, 0.1);
+  --line-strong: rgba(255, 255, 255, 0.25);
+}
+
+html {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #050505;
+  border-left: 1px solid rgba(255, 255, 255, 0.08);
+}
+::-webkit-scrollbar-thumb {
+  background: #27272a;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #FF3B30;
+}
+
+/* Scanline Overlay */
+.scanline {
+  position: relative;
+}
+.scanline::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.03), rgba(0, 255, 0, 0.01), rgba(0, 0, 255, 0.03));
+  z-index: 20;
+  background-size: 100% 3px, 6px 100%;
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+/* Subtle CRT grain overlay */
+.grain-overlay {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* Monospace brutalist typography helpers */
+.mono-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #a1a1aa;
+}
+
+.mono-title {
+  font-family: 'JetBrains Mono', monospace;
+  letter-spacing: -0.02em;
+}
+
+/* Blinking Cursor */
+.blinking-cursor::after {
+  content: "_";
+  color: #FF3B30;
+  animation: blink 1s steps(2, start) infinite;
+  margin-left: 3px;
+  font-weight: 700;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* Brutalist Buttons */
+.btn-brutal {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 0.75rem 1.25rem;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: transparent;
+  color: #F3F4F6;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  user-select: none;
+}
+.btn-brutal:hover {
+  background: #F3F4F6;
+  color: #050505;
+  border-color: #F3F4F6;
+  transform: translateY(-1px);
+}
+.btn-brutal:active {
+  transform: translateY(0);
+}
+
+.btn-brutal-accent {
+  border-color: #FF3B30;
+  color: #FF3B30;
+}
+.btn-brutal-accent:hover {
+  background: #FF3B30;
+  color: #050505;
+  border-color: #FF3B30;
+  box-shadow: 0 0 20px rgba(255, 59, 48, 0.4);
+}
+
+.btn-brutal-green {
+  border-color: #32D74B;
+  color: #32D74B;
+}
+.btn-brutal-green:hover {
+  background: #32D74B;
+  color: #050505;
+  border-color: #32D74B;
+  box-shadow: 0 0 20px rgba(50, 215, 75, 0.4);
+}
+
+/* Brutalist Input */
+.input-brutal {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 0.85rem 0.25rem;
+  color: #F3F4F6;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+.input-brutal:focus {
+  border-bottom-color: #FF3B30;
+  background: rgba(255, 59, 48, 0.03);
+}
+
+/* Tech HUD Corner Brackets */
+.hud-corner {
+  position: relative;
+}
+.hud-corner::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  right: -1px;
+  width: 8px;
+  height: 8px;
+  border-bottom: 2px solid #FF3B30;
+  border-right: 2px solid #FF3B30;
+  pointer-events: none;
+}
+.hud-corner::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid #FF3B30;
+  border-left: 2px solid #FF3B30;
+  pointer-events: none;
+}
