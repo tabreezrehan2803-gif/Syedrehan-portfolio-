@@ -47,7 +47,7 @@ I’m looking for opportunities where I can combine technology, business underst
 • **Enterprise Credentials**:
   - Oracle Certified: Agentic AI Foundations Associate
   - IBM SkillsBuild: Getting Started with Artificial Intelligence
-  - Reliance Foundation: 180h Intensive Cybersecurity Skilling
+  - Reliance Foundation Skilling Academy: Cyber Security Associate (Cert ID: RFSA000625636)
   - AICTE & Brainovision: 1-Month Generative AI & Cloud Engineering
 • **Core Specialization**: Dual focus on Enterprise AI (Prompt Engineering & RAG) + Cyber Security (OWASP Top 10 & Delimiter Sandboxing).
 • **Shipped Projects**: 5 web and AI production applications.
@@ -60,7 +60,7 @@ I’m looking for opportunities where I can combine technology, business underst
     return `🏆 **Verified Credentials & Certifications**:
 1. 🥇 **NPTEL Elite Gold (90%)**: Human-Computer Interaction (IIT Madras & IIIT Delhi) — Top 1% rank.
 2. 🤖 **Oracle Cloud Infrastructure**: Certified Agentic AI Foundations Associate (2025).
-3. 🛡️ **Reliance Foundation Cyber Security**: 180-Hour Skilling Course Certificate.
+3. 🛡️ **Reliance Foundation Skilling Academy**: Cyber Security Associate Certification Programme (Cert ID: RFSA000625636).
 4. 🧠 **IBM SkillsBuild**: Getting Started with Artificial Intelligence.
 5. 🌐 **AICTE & Brainovision**: 1-Month Generative AI Internship Certificate.
 6. 🔒 **Tech Mahindra & NASSCOM**: Cybersecurity & Endpoint Security Associate.

@@ -430,15 +430,15 @@ export const portfolioData = {
       id: "cert-reliance-cybersecurity",
       name: "Cyber Security Associate Certification Programme",
       category: "security",
-      issuer: "Reliance Foundation Skilling Academy · Skill India",
+      issuer: "Reliance Foundation Skilling Academy",
       year: "2026",
       date: "September 23, 2026",
-      tag: "180 Hours Skilling · Industry Authorized",
+      tag: "Reliance Foundation Certified · Cert ID: RFSA000625636",
       verified: true,
       image: "/assets/certificates/cyber_security_associate.png",
       pdfUrl: "/assets/certificates/cyber_security_associate.pdf",
-      description: "Rigorous 180-hour professional skilling course in cyber security operations, threat modeling, endpoint hardening, and vulnerability mitigation authorized by Skill India Digital.",
-      signatory: "Reliance Foundation Skilling Academy & NSDC"
+      description: "Official Certificate of Completion for the Cyber Security Associate Certification Programme by Reliance Foundation Skilling Academy (Cert ID: RFSA000625636). Completed on September 23, 2026.",
+      signatory: "Reliance Foundation Skilling Academy"
     },
     {
       id: "cert-nasscom-endpoint",
@@ -580,7 +580,7 @@ Tools      : Git, GitHub, VS Code, Figma, Linux CLI`,
 ----------------------------------------
 [2026] NPTEL Elite Gold (90%) - HCI (Top 1% of 23,139 candidates)
 [2025] Oracle Cloud Infrastructure Certified Agentic AI Foundations Associate
-[2025] Reliance Foundation Cyber Security Associate (180 Hours)
+[2026] Reliance Foundation Cyber Security Associate (Cert ID: RFSA000625636)
 [2025] NASSCOM & Skill India AI - Business Analyst
 [2025] NASSCOM Analyst Endpoint Security
 [2025] IBM SkillsBuild Artificial Intelligence
